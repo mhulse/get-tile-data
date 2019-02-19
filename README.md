@@ -49,13 +49,19 @@ Heavily inspired by:
 - [PanNom.js](https://github.com/spite/PanomNom.js/blob/master/src/PanomNom.js)
 - [getTileData.js](https://github.com/mattdesl/google-panorama-equirectangular/blob/master/lib/getTileData.js)
 
-Though, when compared to the above scripts, the goal of this code is to provide the user with the highest resolution possible Google Street View panorama tile data as possible (hence the reason why I do not have/need a zoom option).
+Though, when compared to the above scripts, the goal of this code is to return the highest resolution Google Street View panorama tile data as possible.
 
 ## Example
 
 - https://github.com/mhulse/kludgy
 
 ## Development
+
+Clone this repo, then:
+
+```bash
+$ npm install
+```
 
 Run test(s):
 
