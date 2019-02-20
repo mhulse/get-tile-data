@@ -2,7 +2,7 @@ module.exports = (data => {
 
   let result = {};
 
-  if (data) {
+  if (data && data.worldSize && data.tileSize) {
 
     // Not all user-uploaded panos are of the same resolution, so we have to
     // extrapolate the ratio in order to determine the “nearest” zoom:
