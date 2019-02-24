@@ -38,7 +38,9 @@ console.log(parser(tiles));
 //     height: 512
 //   },
 //   rows: 7,
-//   cols: 14
+//   cols: 14,
+//   x: 13,
+//   y: 6
 // }
 ```
 
