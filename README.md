@@ -12,10 +12,7 @@ $ npm i mhulse/tile-parser
 
 ```js
 const parser = require('tile-parser');
-const tiles: {
-  centerHeading: 150,
-  originHeading: 150,
-  originPitch: 0,
+const tiles = {
   tileSize: {
     width: 512,
     height: 512
