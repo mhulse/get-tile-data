@@ -20,9 +20,15 @@ module.exports = (data => {
       height: data.tileSize.height,
     };
 
-    // Rows and cols are synonymous to the x and y equirectangular grid coordinates (zero indexed):
-    result.rows = Math.max(1, Math.ceil(data.worldSize.height / data.tileSize.height));
-    result.cols = Math.max(1, Math.ceil(data.worldSize.width / data.tileSize.width));
+    // Rows and cols are synonymous to the y and x (respectively) equirectangular grid coordinates (zero indexed):
+    const rows = Math.max(1, Math.ceil(data.worldSize.height / data.tileSize.height));
+    const cols = Math.max(1, Math.ceil(data.worldSize.width / data.tileSize.width));
+
+    result.rows = rows;
+    result.cols = cols;
+
+    result.x = (cols - 1);
+    result.y = (rows - 1)
 
   }
 

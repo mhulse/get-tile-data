@@ -3,16 +3,23 @@
 const assert = require('assert');
 
 const parser = require('../index');
-const data = require('./data.js');
+const data = require('./data');
 
-describe('Parse Pano Tiles', function() {
+describe('tile-parser', function() {
 
   describe('module.exports', function() {
 
     data.forEach((test) => {
-      it('input matches expected output object', function() {
-        assert.deepEqual(parser(test.input.tiles), test.output);
+
+      it('should return a multi-dimensional object literal', function() {
+
+        assert.deepEqual(
+          parser(test.input),
+          test.output
+        );
+
       });
+
     });
 
   });
