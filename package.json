@@ -17,10 +17,8 @@
     "url": "https://github.com/mhulse/tile-parser.git"
   },
   "main": "index.js",
-  "dependencies": {
-    "fs-extra": "^7.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "mocha": "^6.0.0"
+    "mocha": "^6.0.1"
   }
 }
